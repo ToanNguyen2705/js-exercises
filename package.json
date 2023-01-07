@@ -1,0 +1,23 @@
+{
+  "name": "shutdown-computer",
+  "version": "1.0.2",
+  "description": "node shut down computer module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Lazar Nikolic",
+  "email": "casadifianco@gmail.com",
+  "license": "UNLICENCED",
+  "keywords": [
+    "shutdown",
+    "node",
+    "module",
+    "shutdown computer"
+  ],
+  "dependencies": {
+    "node-shutdown-windows": "^1.0.0",
+    "shutdown-computer": "^1.0.2"
+  },
+  "devDependencies": {}
+}
