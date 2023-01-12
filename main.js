@@ -74,8 +74,8 @@
 // console.log(isNumber(NaN)); // false
 // console.log(isNumber(100 / 'abc')); // false
 
-// function joinWithCharacter(array, charactor) {
-//     return array.join(charactor)
+// function joinWithCharacter(numberList, charactor) {
+//     return numberList.join(charactor)
 // }
 
 // // Ví dụ khi sử dụng
@@ -149,12 +149,12 @@
 // console.log(getCanVoteMessage(15)) // 'Bạn chưa được bỏ phiếu'
 
 // function getRandNumbers(min,max,length){
-//     var array=[];
+//     var numberList=[];
 
 //     for(var i=0; i<length; i++){
-//         array.push(Math.random() * (max - min) + min)
+//         numberList.push(Math.random() * (max - min) + min)
 //     }
-//     return array;
+//     return numberList;
 
 // }
 // console.log(getRandNumbers(1,99,1))
@@ -354,8 +354,8 @@
 //       "Type": "movie",
 //     }
 //   ];
-//     function calculateRating(array) {
-//       var filmNolan = array.filter(function(film, index){
+//     function calculateRating(numberList) {
+//       var filmNolan = numberList.filter(function(film, index){
 //           return film.Director == "Christopher Nolan"
 //       });
 
@@ -403,10 +403,10 @@
 // console.log(caculate(1, 2, multiCb))
 // console.log(caculate(3, 1, divCb))
 
-// Array.prototype.myMap = function(array) {
-//   var arrayLength = this.length, output = []
-//   for ( var i = 0; i < arrayLength; i++) {
-//       output.push(array(this[i],i))
+// Array.prototype.myMap = function(numberList) {
+//   var numberListLength = this.length, output = []
+//   for ( var i = 0; i < numberListLength; i++) {
+//       output.push(numberList(this[i],i))
 //   }
 //       return output
 // }
@@ -449,8 +449,8 @@
 //     return index % 2 === 0;
 // })); //Output: [1, 3]
 
-// console.log(numbers.myFilter(function (number, index, array) {
-//     return array.length % 2 === 0;
+// console.log(numbers.myFilter(function (number, index, numberList) {
+//     return numberList.length % 2 === 0;
 // })); //Output: [1, 2, 3, 4]
 
 // Array.prototype.mySome = function(cb) {
@@ -477,8 +477,8 @@
 //     return index % 2 === 0;
 // })); //Output: true
 
-// console.log(numbers.mySome(function (number, index, array) {
-//     return array.length % 2 === 0;
+// console.log(numbers.mySome(function (number, index, numberList) {
+//     return numberList.length % 2 === 0;
 // })); //Output: true
 
 // Array.prototype.myEvery = function(cb) {
@@ -508,13 +508,13 @@
 //     return index % 2 === 0;
 // })); // Output: false
 
-// console.log(numbers.myEvery(function (number, index, array) {
-//     return array.length % 2 === 0;
+// console.log(numbers.myEvery(function (number, index, numberList) {
+//     return numberList.length % 2 === 0;
 // })); // Output: true
 
-// var array=['mot','hai','ba'];
+// var numberList=['mot','hai','ba'];
 
-// var [a,b, ...rest]=array;
+// var [a,b, ...rest]=numberList;
 
 // console.log(a);
 // console.log(a, rest);
@@ -547,19 +547,19 @@
 
 // console.log(a)
 
-// var numbersarray=[2,4,5,1,34];
+// var numbersnumberList=[2,4,5,1,34];
 
 // function isZaroAbove(element){
 //     return element > 0
 // }
 
-// if(numbersarray.every(isZaroAbove))
-// alert('All elements inside array is above 0 in value!')
+// if(numbersnumberList.every(isZaroAbove))
+// alert('All elements inside numberList is above 0 in value!')
 
-// var myarray= ['sang','nam','bao','nguyen','toan'];
+// var mynumberList= ['sang','nam','bao','nguyen','toan'];
 
-// var abc=myarray.sort();
-// console.log("myArr", myarray)
+// var abc=mynumberList.sort();
+// console.log("myArr", mynumberList)
 // console.log("abc", abc)
 
 // var a1=['bao', 'nam', 'nguyen', 'sang', 'toan'];
@@ -568,9 +568,9 @@
 
 // var a3=['bao', 'nam', 'nguyen', 'sang', 'toan'];
 
-// console.log(abc,myarray)
+// console.log(abc,mynumberList)
 
-// console.log(myarray===abc,myarray===a1,myarray===a2,myarray===a3)
+// console.log(mynumberList===abc,mynumberList===a1,mynumberList===a2,mynumberList===a3)
 
 // const a = {
 //     value:1500
@@ -619,14 +619,14 @@
 //     console.log(arr[i]+'<br>')
 // }
 
-// var numbersarray = [-3,5,10,16];
+// var numbersnumberList = [-3,5,10,16];
 // // function doublelt(element){
 // //     return element*2
 // // }
-// var doubleldarray = numbersarray.map((element)=>{
+// var doubleldnumberList = numbersnumberList.map((element)=>{
 //     return element*2
 // })
-// console.log(doubleldarray)
+// console.log(doubleldnumberList)
 
 // var number=[45,6,3,64,75,65,34]
 
@@ -702,326 +702,3 @@
 // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 // let odds = arr.filter((n) => n % 2 == 1);
 // console.log(odds);
-
-// const sum = (n) => {
-//   if (typeof n !== "number") return false;
-//   let total = 0;
-//   for (let i = 1; i <= n; i++) { //Tính S(n) = 1^2 + 2^2 + … + n^2
-//     // total += Math.pow(i, 2);
-//     total += i * i;
-//   }
-//   return total;
-// };
-// console.log(sum(3));
-
-// const sum = (n) => {
-//   if (typeof n !== "number") return false;
-//   let total = 0;
-//   for (let i = 1; i <= n; i++) {  //Tính S(n) = 1 + ½ + 1/3 + … + 1/n
-//     total += 1 / i;
-//   }
-//   return total;
-// };
-// console.log(sum(3));
-
-// const sum = (n) => {
-//   if (typeof n !== "number") return false;
-//   let total = 0;
-//   for (let i = 1; i <= n; i++) {  //Tính S(n) = ½ + ¼ + … + 1/2n
-//     total += 1 / (2 * i);
-//   }
-//   return total;
-// };
-// console.log(sum(3));
-
-// const sum = (n) => {
-//   if (typeof n !== "number") return false;
-//   let total = 1;
-//   for (let i = 1; i <= n; i++) {
-//     //Tính S(n) = 1 + 1/3 + 1/5 + … + 1/(2n + 1)
-//     total += 1 / (2 * i + 1);
-//   }
-//   return total;
-// };
-// console.log(sum(2));
-
-// const sum = (n) => {
-//   if (typeof n !== "number") return false;
-//   let total = 1;
-//   for (let i = 1; i <= n; i++) {
-//     //Tính T(n) = 1 x 2 x 3…x N
-//     total *= i;
-//   }
-//   return total;
-// };
-// console.log(sum(4));
-
-// const tong = (n) => {
-//   let total = 0;
-//   for (let i = 0; i <= n; i++) {
-//     if (i % 3 == 0) {
-//       console.log(i);
-//     }
-//   }
-// };
-// tong(100);
-
-// const fs = require("fs");// hàm require và thư viện fs chỉ nodejs có còn javascript thì không có
-
-// // delete a file
-// fs.unlink("file.txt", (err) => {
-//   if (err) {
-//     throw err;
-//   }
-
-//   console.log("File is deleted.");
-// });
-
-// const isIncreasingNumber = (n) => {
-//   let myString = n.toString();
-
-//   let myArr = myString.split("");
-
-//   console.log(myArr); //Xet tắng dần từ trái qua phải
-
-//   for (let i = 0; i < myArr.length; i++) {
-//     if (myArr[i] > myArr[i + 1]) {
-//       return false;
-//     }
-//   }
-//   return true;
-// };
-// console.log(isIncreasingNumber(12312222));
-
-// const isIncreasingNumber = (n) => {
-//   let myString = n.toString();
-
-//   let myArr = myString.split("");
-
-//   console.log(myArr); //Xet giảm dần từ trái qua phải
-
-//   for (let i = 0; i < myArr.length; i++) {
-//     if (myArr[i] < myArr[i + 1]) {
-//       return false;
-//     }
-//   }
-//   return true;
-// };
-// console.log(isIncreasingNumber(987654321));
-
-// const isIncreasing = (n, x) => {
-//   let newString = n.toString();
-//   let newArr = newString.split(""); //Xét n có phải là số tăng dần đều với khoảng cách giữa 2 chữ số là x
-
-//   for (let i = 0; i < newArr.length; i++) {
-//     let check = newArr[i + 1] - newArr[i];
-//     if (newArr[i] < newArr[i + 1] && check === x) {
-//       return true;
-//     }
-//   }
-
-//   return false;
-// };
-// console.log(isIncreasing(135, 1));
-
-// function isPrime(n) {
-//   if (n < 2) return false; //Kiểm tra n có phải là số nguyên tố
-//   for (let i = 2; i <= Math.sqrt(n); i++) {
-//     if (n % i === 0) return false;
-//   }
-//   return true;
-// }
-// console.log(isPrime(5));
-
-// const isPerfectSquare = (n) => {
-//   if (n < 3) return false; //Kiểm tra n có phải là số chính phương
-//   for (let i = 1; i <= n; i++) {
-//     if (Math.pow(i, 2) == n) {
-//       return true;
-//     }
-//   }
-//   return false;
-// };
-
-// console.log(isPerfectSquare(25));
-
-// const isPerfectNumber = (n) => {
-//   let total = 0,
-//     flag = 0;
-//   for (i = 1; i < n; i++) {
-//     if (n % i == 0) total += i;
-//   }
-//   if (total == n && n != 0) flag = 1; //1 là số nguyên tố và 0 là không phải số nguyên tố
-//   return flag;
-// };
-// console.log(isPerfectNumber(3));
-
-// const countWords = (str) => {
-//   let myString = str.split(" "); //Ðếm số từ có trong câu
-//   console.log(myString.length);
-// };
-
-// countWords("tại sao vậy trời ơi");
-
-// const statisticsWords = (str) => {
-//   let arr = str.split(" ");    //Thống kê số lượng từ trong câu
-//   let obj = {};
-//   arr.forEach((item) => {
-//     if (obj[item]) {
-//       obj[item]++;
-//     } else {
-//       obj[item] = 1;
-//     }
-//   });
-//   return obj;
-// };
-// console.log(
-//   statisticsWords(
-//     "start frontend start frontend frontend frontend frontend hello"
-//   )
-// );
-
-// const statisticsCharacters = (str) => {
-//   let arr = str.split("");
-//   let result = {};
-//   for (let i = 0; i < arr.length; i++) {
-//     if (result[arr[i]]) {
-//       result[arr[i]]++;
-//     } else {
-//       result[arr[i]] = 1;
-//     }
-//   }
-//   return result;
-// };
-// console.log(statisticsCharacters("Hello Hello"));       //Thống kê ký tự có trong câu
-
-// function statisticsCharacters(str) {
-//   let result = {};
-//   for (let i = 0; i < str.length; i++) {
-//     if (result[str[i]]) {
-//       result[str[i]]++;
-//     } else {
-//       result[str[i]] = 1;
-//     }
-//   }
-//   return result;
-// }
-// console.log(statisticsCharacters("Hello Hello"));
-
-// const hasEvenNumberGreaterThanN = (numberList, n) => {
-//   for (let i = 0; i <= numberList.length; i++) {
-//     if (numberList[i] % 2 === 0 && numberList[i] > n) {
-//       return true;
-//     }
-//   }
-//   return false;
-// };
-// console.log(hasEvenNumberGreaterThanN([2, 3, 4, 10], 5)); //Kiểm tra có số chẵn lớn hơn n trong mảng
-
-// const hasOddNumberDivisibleBy3 = (numberList) => {
-//   for (let i = 0; i <= numberList.length; i++) {
-//     if (numberList[i] % 3 === 0) {
-//       return true;
-//     }
-//   }
-//   return false;
-// };
-// console.log(hasOddNumberDivisibleBy3([1, 5, 7]));//Kiểm tra có số lẻ và chia hết cho 3
-
-// const hasEasyFrontend = (wordList) => {
-//   for (let i = 0; i <= wordList.length; i++) {
-//     if (wordList[i] == "easy" && wordList[i + 1] == "frontend") {
-//       return true;
-//     } else if (wordList[i] == "easy frontend") {
-//       return true;
-//     }
-//   }
-//   return false;
-// };
-// console.log(hasEasyFrontend(["easy", "frontend"])); //Kiểm tra có từ easy frontend trong mảng không
-
-// const hasEasyFrontend = (wordList) => {
-//   return (
-//     (wordList.includes("easy") && wordList.includes("frontend")) ||
-//     wordList.includes("easy frontend")
-//   );
-// };
-// console.log(hasEasyFrontend(["frontend", "easy"]));
-// const studentList = [
-//   { id: 1, name: "Easy" },
-//   { id: 2, name: "Frontend" },
-// ];
-// const hasStudent = (studentList, studentId) => {
-//   for (let i = 0; i < studentList.length; i++) {
-//     if (studentList[i].id === studentId) {
-//       return true;
-//     }
-//   }
-//   return false;
-// };
-
-// console.log(hasStudent(studentList, 2));
-
-// const studentList = [
-//   { id: 1, name: "a" },
-//   { id: 2, name: "b" },
-// ];
-
-// const check = (arr, studentID) => {
-//   for (let i = 0; i < arr.length; i++) {
-//     if (arr[i].id === studentID) return true;
-//   }
-//   return false;
-// };
-// console.log(check(studentList, 2)); //Kiểm tra có student có id nào đó trong mảng
-
-// function hasStudent(studentList, studentId) {
-//   return studentList.some((student) => student.id === studentId);
-// }
-// const studentList = [
-//   { id: 1, name: "Easy" },
-//   { id: 2, name: "Frontend" },
-// ];
-// console.log(hasStudent(studentList, 1));
-
-// const studentList = [
-//   { id: 1, name: "alice", gender: "male" },
-//   { id: 2, name: "aliCE", gender: "female" },
-//   { id: 3, name: "Easy Frontend", gender: "male" },
-// ];
-// const hasAlice = (studentList) => {
-//   for (let i = 0; i < studentList.length; i++) {
-//     if (studentList[i].name.toUpperCase() === "Alice".toUpperCase()) {
-//       return true;
-//     }
-//   }
-//   return false;
-// };
-// console.log(hasAlice(studentList)); //Kiểm tra có student giới tính là Nữ tên Alice
-
-// const productList = [
-//   { id: 1, name: "Iphone 16", isFreeShip: false, price: 10200500 },
-//   { id: 2, name: "Iphone 16 Pro Max", isFreeShip: true, price: 1500000 },
-// ];
-// // true vì id sô ́ 2 thoa ̉ điê ̀u kiện đê ̀bài
-
-// const hasFreeShip = (productList, price) => {
-//   for (let i = 0; i < productList.length; i++) {
-//     if (productList[i].isFreeShip === true && productList[i].price < price) {
-//       return true;
-//     }
-//   }
-//   return false;
-// };
-
-// console.log(hasFreeShip(productList, 10000000));
-
-// const isIncreasingNumberList = (numberList) => {
-//   for (let i = 0; i < numberList.length; i++) {
-//     if (numberList[i] > numberList[i + 1]) {
-//       return false;
-//     }
-//   }
-//   return true;
-// };
-// console.log(isIncreasingNumberList([1, 2, 3, 4, 5]));
